@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<img src="./images/HTML.jpg" alt="Hero Image" width="100%" height="400px" >
+<marquee direction="right"><h1>HTML</h1></marquee>
+<marquee><h1>Notes</h1></marquee>
+<!-- <marquee direction="up,right,down">HTML - Notes</marquee> -->
+<hr> <!-- for horizontal line -->
+<h1 id="page">heading 1 text</h1>
+<h2>heading 2 text</h2>
+<h3>heading 3 text</h3>
+<h4>heading 4 text</h4>
+<h5>heading 5 text</h5>
+<h6>heading 6 text</h6>
+<br> <!-- break line -->
+<p>pragraph text.</p>
+<pre>Lorem ipsum dolor       sit
+    amet consectetur       adipisicing elit.
+    Cum, ipsam?</pre>
+<b>for text bold</b>
+<strong>this also make text bold but it is use for seo</strong>
+<i>make font italic</i>
+<em>hello it makes also italic font but it is good for seo</em>
+<small>it is use like copyright and other side-comments</small>
+<mark> u can heigtlight any text</mark>
+<del> any word that used to in that page but delet</del>
+<ins>add new word in that page</ins>
+<br>
+x<sub>2</sub>
+y<sup>2</sup>
+<q> u can write any quotes</q>
+<blockquote cite="https://www.worldwildlife.org/who/index.html">
+    For 50 years, WWF has been protecting the future of nature.
+The world's leading conservation organization, WWF works in 100 countries and is supported by 1.2 million members in the United States and close to 5 million globally.
+</blockquote>
+<abbr title="world health organization">who</abbr>
+<address>Etah U.P.</address>
+<cite>the lost kid</cite>is written by somenone..
+<a href="#">home link</a>
+<a href="#" target="_blank"> Instagram link (open in new tab) </a>
+<a href="#" title="this is hello link">hello</a>
+<br>
+<a href="#page">top</a>
+<p>contact us on <a href="mailto:brown11369@gmail.com?subject=Hello... how are you?">brown11369@gmail.com</a></p>
+<!-- ordered list -->
+<ol start="11">
+    <li>milk</li>
+    <li>tea</li>
+    <li>water</li>
+</ol>
+<ol type="A" start="3">
+    <li>milk</li>
+    <li>tea</li>
+    <li>water</li>
+</ol>
+<ol type="a">
+    <li>milk</li>
+    <li>tea</li>
+    <li>water</li>
+</ol>
+<ol type="I" start="3">
+    <li>milk</li>
+    <li>tea</li>
+    <li>water</li>
+</ol>
+<ol type="i">
+    <li>milk</li>
+    <li>tea</li>
+    <li>water</li>
+</ol>
+<ol>
+    <li>milk</li>
+    <li>coffee</li>
+    <ol>
+        <li>black</li>
+        <li>cold</li>
+    </ol>
+    <li>tea</li>
+    <li>water</li>
+</ol>
+<!-- Unordered list -->
+<ul>
+    <li>coffee</li>
+    <ul>
+        <li>black</li>
+        <li>hot</li>
+    </ul>
+    <li>milk</li>
+    <ol>
+        <li>cold</li>
+        <li>hot</li>
+    </ol>
+    <li>water</li>
+</ul>
+<!-- style ul list ("list-style-type:") -->
+<!-- types (disc, circle, square, none) -->
+<ul style="list-style-type: square;">
+    <li>toy</li>
+    <li>kid</li>
+    <li>play</li>
+</ul>
+<!-- description list -->
+<dl>
+    <dt>coffee</dt>
+    <dd>black hot drink</dd>
+    <dt>milk</dt>
+    <dd>white cold drink</dd>
+</dl>
+<!-- HTML Table -->
+<table border="1">
+    <caption>table no. 1</caption>
+    <tr>
+        <th>S. No.</th>
+        <th>column 1</th>
+        <th>column 2</th>
+        <th>column 3</th>
+    </tr>
+    <tr>
+        <th>1</th>
+        <td>data 1</td>
+        <td colspan="2">data 2</td>
+    </tr>
+    <tr>
+        <th>2</th>
+        <td rowspan="2">data 4</td>
+        <td>data 5</td>
+        <td>data 6</td>
+    </tr>
+    <tr>
+        <th>3</th>
+        <td>data 8</td>
+        <td>data 9</td>
+    </tr>
+</table>
+<br>
+<br>
+<table border="1">
+    <caption>table no. 2</caption>
+    <thead style="color: blue;">
+        <tr>
+            <th>S. No.</th>
+            <th>column 1</th>
+            <th>column 2</th>
+            <th>column 3</th>
+        </tr>
+    </thead>
+    <tbody style="color: brown;">
+        <tr>
+            <th>1</th>
+            <td>data 1</td>
+            <td>data 2</td>
+            <td>data 3</td>
+        </tr>
+        <tr>
+            <th>2</th>
+            <td>data 4</td>
+            <td>data 5</td>
+            <td>data 6</td>
+        </tr>
+        <tr>
+            <th>3</th>
+            <td>data 7</td>
+            <td>data 8</td>
+            <td>data 9</td>
+        </tr>
+    </tbody>
+    <tfoot style="color: blue;">
+        <tr>
+            <th>S. No.</th>
+            <th>column 1</th>
+            <th>column 2</th>
+            <th>column 3</th>
+        </tr>
+    </tfoot>
+</table>
+<table border="1">
+    <caption>table no. 3</caption>
+    <thead style="color: blue;">
+        <tr>
+            <th>S. No.</th>
+            <th>column 1</th>
+            <th>column 2</th>
+            <th>column 3</th>
+        </tr>
+    </thead>
+    <tbody style="color: brown;">
+        <tr>
+            <th>1</th>
+            <td>data 1</td>
+            <td>data 2</td>
+            <td>data 3</td>
+        </tr>
+        <tr>
+            <th>2</th>
+            <td>data 4</td>
+
+            <td>
+                <table border="1">
+                    <caption>nested table</caption>
+                    <tr>
+                        <th>name</th>
+                        <th>age</th>
+                        <th>class</th>
+                    </tr>
+                    <tr>
+                        <td>bimbo</td>
+                        <td>12</td>
+                        <td>4</td>
+                    </tr>
+                </table>
+            </td>
+            <td>data 6</td>
+        </tr>
+        <tr>
+            <th>3</th>
+            <td>data 7</td>
+            <td>data 8</td>
+            <td>data 9</td>
+        </tr>
+    </tbody>
+    <tfoot style="color: blue;">
+        <tr>
+            <th>S. No.</th>
+            <th>column 1</th>
+            <th>column 2</th>
+            <th>column 3</th>
+        </tr>
+    </tfoot>
+</table>
+<div style="border:1px solid red;">A div section in a document that is styled with CSS:</div>
+<p>Div - Block element(a block level element always start on new line and takes up the full width availabe)</p>
+<pre>
+    -:Block level element:-
+
+
+    address
+    article
+    aside
+    blockquote
+    canvas
+    dd
+    div
+    dl
+    dt
+    fieldset
+    figcaption
+    figure
+    footer
+    form
+    h1-h6
+    header
+    hr
+    li
+    main
+    nav
+    noscript
+    ol
+    ul
+    p
+    pre
+    section
+    table
+    tfoot
+    video
+</pre>
+<span style="border:1px solid red;">A span element which is used to color a part of a text:</span>
+<span>random text</span>
+<pre>
+    -:inline element:-
+
+
+    a
+    abbr
+    acronym
+    b
+    bdo
+    big
+    br
+    button
+    cite
+    code
+    dfn
+    em
+    i
+    img
+    input
+    kbd
+    label
+    map
+    object
+    output
+    q
+    samp
+    script
+    select
+    small
+    span
+    strong
+    sub
+    sup
+    textarea
+    time
+    tt
+    var
+</pre>
+
+<p>Iframe: An HTML iframe is used to display a web page within a web page.</p>
+<iframe src="https://www.opindia.com/" height="500" width="500"></iframe>
+<iframe src="https://www.republicworld.com/" height="500" width="500"></iframe>
+<br>
+<hr>
+<audio controls>
+<source src="./images/shree-krishna.mpeg" type="audio/mpeg">
+Your browser does not support audio file.
+</audio>
+<br>
+<hr>
+<video controls>
+<source src="./images/dog.mp4" type="video/mp4">
+Your browser does not support video file.
+</video>
+<br>
+<hr>
+<video autoplay>
+<source src="./images/dog.mp4" type="video/mp4">
+Your browser does not support video file.
+</video>
+<embed src="./images/pdf.pdf" type="application/pdf">
+
+
+
+    
+<button><a href="https://www.youtube.com/watch?v=KgGnTMwSxFU">video</a></button>
+</body>
+</html>

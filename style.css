@@ -1,0 +1,24 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.main {
+  padding: 0 45px;
+  background-color: #283593;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Pacifico";
+}
+.nav a {
+  color: #fff;
+  text-decoration: none;
+}
+.nav {
+  list-style: none;
+  display: flex;
+}
+.nav li {
+  margin-left: 20px;
+}
