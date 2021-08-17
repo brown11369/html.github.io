@@ -4,7 +4,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>HTML Document</title>
+    <meta name="description" content="HTML Introduction · What is HTML? · A Simple HTML Document · What is an HTML Element? · Web Browsers · HTML Page Structure · HTML History · Report Error ·" />
+    <meta name="keywords" content="HTML, Document, learn html" />
+    <link rel="canonical" href="about.html" />
+    <meta name="robots" content="index, follow" />
+
+    <link rel="apple-touch-icon" sizes="180x180" href="./images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="./images/favicon/site.webmanifest">
+    <link rel="mask-icon" href="./images/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
 </head>
 <body>
     <img src="./images/HTML.jpg" alt="Hero Image" width="100%" height="400px" >
@@ -452,14 +465,200 @@ Your browser does not support video file.
 <h2>Html image maps</h2>
     <img alt="langs.jpg" usemap="#langs" src="./images/langs.jpg"/>
     <map id="langs" name="langs">
-        <area alt="C" href="https://courses.w3schools.com/courses/c-sharp" target="_blank" shape="circle" coords="549,216,45"/>
-        <area alt="SQL" href="https://www.w3schools.com/sql/default.asp" target="_blank" shape="circle" coords="265,55,45"/>
-        <area alt="CSS" href="https://www.w3schools.com/css/default.asp" target="_blank" shape="circle" coords="147,108,45"/>
-        <area alt="JAVA SCRIPT" href="https://www.w3schools.com/js/default.asp" target="_blank" shape="circle" coords="505,106,45"/>
-        <area alt="JAVA" href="https://www.w3schools.com/java/default.asp" target="_blank" shape="circle" coords="395,55,45"/>
-        <area alt="HTML" href="https://www.w3schools.com/html/default.asp" target="_blank" shape="circle" coords="96,216,45"/>
-        <area alt="laptop" href="https://www.asus.com/in/" target="_blank" shape="poly" coords="245,130,245,130,414,127,418,240,419,239,434,298,434,298,226,299,226,299,246,247,246,247,243,129"/>
+        <area alt="C" title="C" href="https://courses.w3schools.com/courses/c-sharp" target="_blank" shape="circle" coords="549,216,45"/>
+        <area alt="SQL" title="SQL" href="https://www.w3schools.com/sql/default.asp" target="_blank" shape="circle" coords="265,55,45"/>
+        <area alt="CSS" title="CSS" href="https://www.w3schools.com/css/default.asp" target="_blank" shape="circle" coords="147,108,45"/>
+        <area alt="JAVA SCRIPT" title="JAVA SCRIPT" href="https://www.w3schools.com/js/default.asp" target="_blank" shape="circle" coords="505,106,45"/>
+        <area alt="JAVA" title="JAVA" href="https://www.w3schools.com/java/default.asp" target="_blank" shape="circle" coords="395,55,45"/>
+        <area alt="HTML" title="HTML" href="https://www.w3schools.com/html/default.asp" target="_blank" shape="circle" coords="96,216,45"/>
+        <area alt="laptop" title="Laptop" href="https://www.asus.com" target="_blank" shape="poly" coords="245,130,245,130,414,127,418,240,419,239,434,298,434,298,226,299,226,299,246,247,246,247,243,129"/>
     </map>
+<h2>Form</h2>
+<!-- u can transfer data by post method and gateway method GET/POST default is GET action tag use for redricet new page-->
+<!-- enctype="multipart/form-data" for big data only use for backend-->
+<form method="GET/POST" action="service.html">
+    <div>
+        First Name:
+        <input type="text" size="40" placeholder="Enter Your Name">
+        <!-- placeholder only use showing text like watermark in field -->
+        <!-- u can size for make text area wide by given number  -->
+        Last Name:
+        <input type="text" maxlength="5" name="input_name">
+        <!-- name it is use for backend just show data with name so u can identify data what use give u like name phone number address -->
+        <!-- maxlenght is use for charcter number in text area -->
+        Last Name:
+        <input type="text" value="bonapart" disabled>
+        <!-- disabled -->
+        autofocus:
+        <input type="text" autofocus>
+        <!-- autofocus move your cursor in that area -->
+        autocomplete:
+        <input type="text" autocomplete="on">
+        <!-- autocomplete gives u hint or suggestion that used before in that form -->
+        user id:
+        <input type="text" value="432892" readonly >
+        <!-- by readonly u can't change data -->
+    </div>
+
+    <div>
+        Email:
+        <input type="email" required>
+        <!-- required for make any area importent -->
+    </div>
+    <div>
+        Number:
+        <input type="number">
+        <!-- min and max only use for number,range or date -->
+        reg no:
+        <input type="number" min="3" max="5">
+        Number:
+        <input type="number" value="0" step="3">
+        <!-- step is make number increase in given value u can use it in number and range -->
+    </div>
+    <div>
+        Password:
+        <input type="password">
+    </div>
+    <div>
+        Hidden:
+        <input type="hidden" value="delhi">
+    </div>
+    <div>
+        Date:
+        <input type="date">
+    </div>
+    <div>
+        Time:
+        <input type="time">
+    </div>
+    <div>
+        URL:
+        <input type="url">
+    </div>
+    <div>
+        Range:
+        <input type="range" min="100" max="5000">
+    </div>
+    <div>
+        Choose Your Color:
+        <input type="color">
+    </div>
+    <div>
+        Upload file:
+        <input type="file">
+    </div>
+    <div>
+        Upload multiple file:
+        <input type="file" multiple>
+    </div>
+    <div>
+        dropdown:
+        <select size="3" multiple>
+            <!-- visible data that u want -->
+            <!-- select multiple item -->
+            <option>milk</option>
+            <option>pin</option>
+            <option>call</option>
+            <option>tea</option>
+            <option>mall</option>
+            <option selected>coca</option>
+            <!-- selected use that data u wanna show first -->
+        </select>
+    </div>
+    <div>
+        dropdown with group:
+        <select>
+            <optgroup label="drink">
+                    <option>milk</option>
+                    <option>coca</option>
+                    <option>water</option>
+                    <option>tea</option>
+            </optgroup>
+            <optgroup label="things">
+                    <option>pin</option>
+                    <option>basket</option>
+                    <option>phone</option>
+                    <option>mall</option>
+            </optgroup>
+        </select>
+    </div>
+    <div>
+        radio multi button:
+        <input type="radio">coca
+        <input type="radio">water
+        <input type="radio" checked>tea
+    </div>
+    <div>
+        radio single button:
+        <input type="radio" name="gender" value="male">Male
+        <input type="radio" name="gender" value="female">female
+        <input type="radio" name="gender" value="other">other
+        <!--  u can grop them bt name E.g. name="gender" -->
+    </div>
+    <div>
+        <textarea rows="20" cols="50" placeholder="leave your message">
+            hello sir
+        </textarea>
+    </div>
+    <div>
+        checkbox:
+        <input type="checkbox" name="sports"> cricket
+        <input type="checkbox" name="sports"> hocky
+        <input type="checkbox" name="sports"> football
+    </div>
+    <div>
+        <input type="submit" value="send" >
+        <!-- u can use image instead of button  type="image" src="./images/button.jpg" width="100" height="50" -->
+    </div>
+    <div>
+        Reset:
+        <input type="reset">
+    </div>
+    </form>
+    <form>
+        <div>
+            seach:
+            <input type="text" list="searchie">
+            <datalist id="searchie">
+                <option value="mango"> 
+                <option value="apple">
+                <option value="orange">
+                <option value="banana"> 
+            </datalist>
+            <input type="submit" value="search">
+        </div>
+    </form>
+    <form>
+        <fieldset>
+            <legend>Basic Information</legend>
+            <label for="fname">First Name</label>
+            <input type="text" name="first name" id="fname">
+            <label for="lname">Last Name</label>
+            <input type="text" name="last name" id="lname">
+        </fieldset>
+        <fieldset>
+            <legend>Other Information</legend>
+            <label for="Address">Address</label>
+            <input type="text" name="first name" id="Address">
+            <label for="mobile">Mobile</label>
+            <input type="text" name="last name" id="mobile">
+        </fieldset>
+        <fieldset>
+            <input type="submit" value="go">
+        </fieldset>
+    </form>
+
+<h2>SEO Tags</h2>
+<pre>
+    title
+    description
+    keywords
+    canonical
+    robots - index/noindex  ========    follow/nofollow
+</pre>
+
+
+     
     
 
 
