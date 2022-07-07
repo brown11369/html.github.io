@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/* 
+when direction is row 
+X - main
+y - cross
+
+when direction is column
+y - main
+x - cross
+
+Justify-content only work with main axis
+
+align-items only work with cross axis
+
+
+*/
+
+
+
+.parent{
+    width: 100%;
+    height: 700px;
+    color: white;
+    font-size: 50px;
+    background-color: gray;
+    display: flex;
+    flex-direction: row;    /* by default its row */
+    justify-content: flex-end;  /* center, flex-start, space-evenly, space-around, space-between */
+    align-items: flex-end; /* flex-start, flex-end, center */
+    flex-wrap: wrap;
+    align-content: flex-start; /* initial is default flex-end, center, stretch */
+}
+.one{
+    width: 200px;
+    height: 200px;
+    background-color: red;
+}
+.two{
+    width: 200px;
+    height: 200px;
+    background-color: green;
+}
+.three{
+    width: 200px;
+    height: 200px;
+    background-color: black;
+    background-color: blue;
+}
+.four{
+    width: 200px;
+    height: 200px;
+    background-color: black;
+}
+.five{
+    width: 200px;
+    height: 200px;
+    background-color: yellow;
+}
+.six{
+    width: 200px;
+    height: 200px;
+    background-color: pink;
+}

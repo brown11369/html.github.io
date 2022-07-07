@@ -1,0 +1,71 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.one{
+    height: 200px;
+    width: 200px;
+    background-color: red;
+}
+
+.one:hover{
+    background-color: green;
+}
+
+.one:active{
+    background-color: blue;
+}
+.inp:focus{
+    border: 2px solid blue;
+}
+.pnk:visited{
+    color: red;
+}
+/* 3n (-n+3)  -2n+2  nth-child nth-first-child */
+/* li:nth-last-child(-n+3){
+    color: blue;
+
+} */
+
+.main>p{
+    color: blue;
+}
+
+.dc > li {
+    color: chartreuse;
+}
+
+input[type="text"]{
+    border-radius: 5px;
+    padding: 4px;
+    margin-left: 5px;
+}
+input[type="password"]{
+    margin-left: 10px;
+}
+/* Default value
+
+blur        0px
+brightness  100%    (normal)
+contrast    100%    (normal)
+grayscale   100%    (maximum)
+invert      100%    (maximum)
+sepia       100%    (maximum)
+saturate    100%    (normal)
+hue-rotate  0(deg)  (normal)
+
+*/
+.fltr{
+    filter: blur(0.9px);
+    /* filter: brightness(40%); */
+    /* filter: contrast(100%); */
+    /* filter: grayscale(40%); */
+    /* filter: invert(20%); */
+    /* filter: sepia(70%); */
+    /* filter: saturate(100%); */
+    /* filter: hue-rotate(90deg); */
+
+}
+
+
+

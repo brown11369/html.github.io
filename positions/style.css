@@ -1,0 +1,58 @@
+/* *{
+    margin: 0;
+    padding: 0;
+}
+.parent{
+    height: 700px;
+    width: 500px;
+    border: 10px solid black;
+    margin: 100px;
+}
+.one{
+    height: 100px;
+    width: 100px;
+    background-color: red;
+    position: relative;
+} */
+/*  relative : positioned according to it orignal place */
+/* absolute : positioned according to nearest positioned parent or to the body  */
+/* fixed : position according to the body */
+/* .two{
+    height: 100px;
+    width: 100px;
+    background-color: green;
+    position: relative;
+    top: 0px;
+    left: 0px;
+}
+.three{
+    height: 100px;
+    width: 100px;
+    background-color: blue;
+}
+*/
+.banner{
+    width: 100%;
+    height: 500px;
+    background-color: red;
+    position: relative;
+    overflow: hidden;
+} 
+.image{
+    width: 100%;
+    position: absolute;
+    filter: blur(5px);
+}
+.dtl{
+    width: 40%;
+    font-family: segoe ui;
+    /* background-color: black; */
+    color: white;
+    font-size: 50px;
+    font-weight: bold;
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    /* z-index: 5; */
+
+}

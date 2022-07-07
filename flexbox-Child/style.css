@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    width: 100%;
+    height: 500px;
+    color: white;
+    font-size: 100px;
+    background-color: gray;
+    display: flex;
+}
+.child1{
+    height: 300px;
+    width: 300px;
+    background-color: red;
+    flex-grow: 2;
+    order: 5;
+    /* flex: 100px 2; */
+}
+.child2{
+    height: 300px;
+    width: 300px;
+    background-color: blue;
+    flex-grow: 1;
+    order: 8;
+    align-self: flex-end;
+    /* flex-shrink: 2; */
+}
+.child3{
+    height: 300px;
+    width: 300px;
+    background-color: green;
+    flex-grow: 1;
+    order: 3;
+}
+
+
