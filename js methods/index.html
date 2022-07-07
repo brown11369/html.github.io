@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+    <script>
+        let emp=[
+            {name:"rahul",city:"Kanpur",age:25},
+            {name:"Lalu",city:"agra",age:45},
+            {name:"mohan",city:"Mumbai",age:34},
+            {name:"harish",city:"agra",age:51}
+    ]
+        let user="brown"
+        let num=[1,2,3,4,5,6,7,8,9,6]
+// Foreach
+        emp.forEach((ele,ind)=>{
+            console.log(ele.name)
+        })
+// Filter
+        let data=emp.filter((ele,ind)=>{
+            return ele.city==="agra";
+        })
+        console.log(data);
+// Map
+        let Cdata= emp.map((ele,ind)=>{
+            return ele.age+2;
+        })
+        console.log(Cdata);
+// Find
+        let Fdata=emp.find((ele,ind)=>{
+            return ele.name==="mohan";
+        })
+        console.log(Fdata);
+// Sort
+        let numb=[34,89,68,67,54,19,73,39,89,41,68]
+
+        numb.sort();
+        desc= numb.sort((a,b)=>{
+            return b-a;
+        })
+        console.log(numb);
+        console.log(desc);
+// slice
+        let sldata = [243,37,23,89,67,29,19,15]
+        let sdata=sldata.slice(1,2);
+        console.log(sdata)
+        console.log(sldata);
+// splice
+        let spdata =["name","thing","extra","book","pen","card"]
+        let spldata= spdata.splice(1,2)
+        console.log(spldata);
+        console.log(spdata);
+// pop
+        let popdata = [34,67,29,82,40,15]
+        popdata.pop()
+        console.log(popdata.pop());
+        console.log(popdata);
+// findIndex
+        let fin= [12,78,45,89,23,12,56]
+        let finr= fin.findIndex((ele,ind)=>{
+            return ele===78;
+        })
+        let dinf= fin.indexOf(12);
+        console.log(dinf);
+        console.log(finr);
+        console.log(fin);
+// sunstring
+        let uname= "brownbin"
+        let stname= uname.substring(1,3);
+        console.log(stname);
+// substr
+        let strname="hemakundwala"
+        let ctname= strname.substr(4,4)
+        console.log(ctname);
+
+
+
+
+
+        
+
+
+
+
+
+
+    </script>
+</body>
+</html>
