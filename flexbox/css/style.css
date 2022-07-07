@@ -1,0 +1,75 @@
+.container{
+    border: 5px solid #ffcc5c;
+    display: flex;
+    /* flex-wrap: wrap; */
+    /* height: 400px; */
+    /* flex-direction: column; */
+    /* justify-content: space-between; */
+    /* align-items: center; */
+
+}
+
+/* 1.Main axis and Cross axis :-
+
+flex-direction :- row,(default) column */
+
+/* 2. Justify-conent :- flex-stat, flex-end, center, space-around, space-between, space-evenly */
+
+/* 3. Positioning Items :-
+
+.home{
+    margin-right: auto; | justify-content: flex-end; |
+} */
+
+/* 4. Flex Property :- flex-grow, flex-shrink, flex-basis 
+
+//////
+.container > div {
+    flex: 1;
+    width: 33.333%;
+}
+
+.container > .search {
+    flex: 2;
+}
+////////
+
+
+.home, .logout{
+    flex: 1;
+}
+*/
+
+/* 5. Align Items:- stretch, flex-start, flex-end, center */
+
+/* 6. flex Direction Column */
+
+/* 7. Wrapping Up 
+.container > div{
+    width: 300px;  | flex-wrap:- wrap, nowrap |
+}
+*/
+
+/* 8. Flex, Grow, Shrink, Basis */
+
+/* .home{
+    flex: 1 1 200px;    | flex-grow, flex-shrink, flex-basis |
+} */
+
+/* .logout{
+    flex: 2 0 200px;
+} */
+
+/* 9. Order 
+
+.home{
+    order: 3;
+}
+
+.search{
+    order: 0;
+}
+.logout{
+    order: -1;
+}
+*/

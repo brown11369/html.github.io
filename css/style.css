@@ -1,4 +1,61 @@
-* {
-  margin: 0;
-  padding: 0;
+/**
+Three types of Selectors
+1. Elementor Selectors --  h1 h2 div p......
+2. Class Selectors --  this is define by you always use . for class
+3. ID Selctors -- this is define by you always use # for class
+**/
+
+
+
+/* 
++ Element with class selector (selector.class)
++ child(direct) selector (selector > selector)
++ Descendent selector (selector selector)
++ Adjacent sibling selector (selector + selector)
++ General sibling selector (selector ~ selector)
+*/
+
+
+
+
+/* Grouping Selector */
+
+h1, p{
+    text-align: center;
 }
+
+.para, h1, .dip{
+    color: crimson;
+}
+
+
+
+/* 1. (a) Element Selectors(div) with class selector(.nomb) */
+/* You can't change order of Element and class */
+/* <!-- NOTE lack of space in between #elements# and #class# definition --> */
+div.nomb{
+    font-size: 35px;
+}
+
+/* 1. (b) Now use both Class Selectors(.cola) with class selector(.vola) */
+/* You change order of classes like .cola.vola and .vola.cola */
+/* <!-- NOTE lack of space in between #elements# and #class# definition --> */
+.cola.vola{
+    font-size: 40px;
+    font-style: italic;
+}
+
+
+
+/* 2. <!-- child selector --> */
+article > p {
+    color: blueviolet;
+}
+
+
+
+/* 3. <!-- Descendant selector --> */
+section  p {
+    color: blueviolet;
+}
+

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    <title>Combining selectors</title>
+</head>
+<body>
+    <!-- /* Grouping selector: always use , for grouping */ -->
+    <h1>Combining selectors</h1>
+    <p>hello</p>
+    <p class="dip">Lorem ipsum dolor sit amet.</p>
+    <div class="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit, laborum!</div>
+    <!-- 1. (a) combining selector -->
+    <!-- NOTE lack of space in between #elements# and #class# definition -->
+    <div class="nomb">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</div>
+    <p class="nomb">Lorem, ipsum dolor.</p><!-- this element will be unaffected -->
+    <!-- /* 1. (b) Now use both Class Selectors(.cola) with class selector(.vola) */ -->
+    <h3 class="vola cola">maza</h3>
+    <h3 class="vola">maza</h3>
+
+    <!-- 2. child selector -->
+    <article>
+        <p>Lorem ipsum dolor sit amet.</p> <!-- this p is direct child of article elements so it will be only affected -->
+    </article>
+    <p>Lorem ipsum dolor sit amet.</p> <!-- this element will be unaffected -->
+    <article>
+        <div><p>Lorem ipsum dolor sit amet.</p></div> <!-- this element p is not direct child of article so it will be unaffected -->
+    </article>
+    <!-- 3. Descendant selector -->
+    <section>
+        <p>Lorem ipsum dolor sit amet.</p>
+    </section>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <section>
+        <div><p>Lorem ipsum dolor sit amet.</p></div>
+    </section>
+</body>
+</html>

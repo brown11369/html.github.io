@@ -1,0 +1,32 @@
+.container{
+    list-style-type: none;
+    color: #ffeead;
+    background-color: #96ceb4;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2em;
+}
+li{
+    margin-left: 10px;
+}
+html, body{
+    background-color: #ffeead;
+    margin: 10px;
+}
+::placeholder{
+    color: #ffeead;
+}
+.search-input{
+    width: 100px;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    font-size: 1em;
+    color: #ffeead;
+}
+.container{
+    border: 5px solid #ffcc5c;
+    display: flex;
+}
+.search{
+    flex: 1;
+}

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+
+
+
+
+    <script>
+
+        function getdata(url){
+
+            let p = new Promise(function(resolve,regect){
+
+                let xhttp=new XMLHttpRequest();
+                xhttp.onreadystatechange=function(){
+
+                if(this.readyState===4)
+                {
+                    if(this.status===200){
+                        resolve(JSON.parse(this.responseText));
+                    }
+                    else
+                    {
+                        regect("Get Some Problem in server")
+                    }
+                }
+            }
+
+
+
+            xhttp.open("get",url,true)
+            xhttp.send();
+
+
+            })
+
+            
+         return p   
+
+        }
+
+        
+
+
+
+        getdata("https://jsonplaceholder.typicode.com/users")
+        .then(function(users){
+
+            console.log(users);
+
+            return getdata("https://jsonplaceholder.typicode.com/posts")
+
+        })
+        .then(function(posts){
+            console.log(posts);
+
+            return getdata("https://jsonplaceholder.typicode.com/comments")
+        })
+        .then(function(comments){
+            console.log(comments)
+        })
+        .catch(function(err){
+            console.log(err);
+        })
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>
